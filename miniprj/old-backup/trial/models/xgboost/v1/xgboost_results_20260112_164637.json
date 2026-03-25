@@ -1,0 +1,54 @@
+{
+  "death": {
+    "auroc": 0.9147,
+    "auprc": 0.273,
+    "f1": 0.1559,
+    "precision": 0.0864,
+    "recall": 0.7964,
+    "specificity": 0.8676,
+    "threshold": 0.5,
+    "tp": 6930,
+    "fp": 73265,
+    "tn": 480088,
+    "fn": 1772
+  },
+  "vent": {
+    "auroc": 0.7704,
+    "auprc": 0.0807,
+    "f1": 0.0685,
+    "precision": 0.0366,
+    "recall": 0.5378,
+    "specificity": 0.8458,
+    "threshold": 0.5,
+    "tp": 3256,
+    "fp": 85763,
+    "tn": 470238,
+    "fn": 2798
+  },
+  "pressor": {
+    "auroc": 0.7987,
+    "auprc": 0.0499,
+    "f1": 0.0571,
+    "precision": 0.0298,
+    "recall": 0.6652,
+    "specificity": 0.7707,
+    "threshold": 0.5,
+    "tp": 3922,
+    "fp": 127520,
+    "tn": 428639,
+    "fn": 1974
+  },
+  "composite": {
+    "auroc": 0.7792,
+    "auprc": 0.2193,
+    "f1": 0.1964,
+    "precision": 0.1161,
+    "recall": 0.637,
+    "specificity": 0.7805,
+    "threshold": 0.5,
+    "tp": 15498,
+    "fp": 118030,
+    "tn": 419694,
+    "fn": 8833
+  }
+}

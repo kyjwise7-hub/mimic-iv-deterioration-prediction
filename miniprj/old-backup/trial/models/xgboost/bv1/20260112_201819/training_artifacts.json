@@ -1,0 +1,197 @@
+{
+  "version": "bv1",
+  "timestamp": "20260112_201819",
+  "data_dir": "/Users/iseungmin/Documents/GitHub/oracle-fire4bird/miniprj/data-pipeline/data/processed/all_features_refactored",
+  "feature_cols_path": "/Users/iseungmin/Documents/GitHub/oracle-fire4bird/miniprj/data-pipeline/data/processed/all_features_refactored/features.json",
+  "n_features": 32,
+  "targets": {
+    "death": "death_next_24h",
+    "vent": "vent_next_12h",
+    "pressor": "pressor_next_12h",
+    "composite": "composite_next_24h"
+  },
+  "default_thresholds": {
+    "death": 0.1,
+    "vent": 0.1,
+    "pressor": 0.1,
+    "composite": 0.15
+  },
+  "training_summary": {
+    "death": {
+      "val_auroc": 0.9245735759141487,
+      "val_auprc": 0.32413269171109704,
+      "best_iteration": 254,
+      "scale_pos_weight": 63.503523143191494
+    },
+    "vent": {
+      "val_auroc": 0.7814331477452019,
+      "val_auprc": 0.08280489365617996,
+      "best_iteration": 496,
+      "scale_pos_weight": 89.38955374899689
+    },
+    "pressor": {
+      "val_auroc": 0.7940266685128508,
+      "val_auprc": 0.050772635145702065,
+      "best_iteration": 801,
+      "scale_pos_weight": 92.65054404800637
+    },
+    "composite": {
+      "val_auroc": 0.78596777979171,
+      "val_auprc": 0.23067821536442318,
+      "best_iteration": 430,
+      "scale_pos_weight": 21.830182859660717
+    }
+  },
+  "best_params": {
+    "death": {
+      "objective": "binary:logistic",
+      "tree_method": "hist",
+      "learning_rate": 0.05,
+      "max_depth": 5,
+      "min_child_weight": 10,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 2.0,
+      "reg_alpha": 0.0,
+      "eval_metric": [
+        "auc",
+        "aucpr"
+      ],
+      "random_state": 42,
+      "scale_pos_weight": 63.503523143191494
+    },
+    "vent": {
+      "objective": "binary:logistic",
+      "tree_method": "hist",
+      "learning_rate": 0.05,
+      "max_depth": 5,
+      "min_child_weight": 10,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 2.0,
+      "reg_alpha": 0.0,
+      "eval_metric": [
+        "auc",
+        "aucpr"
+      ],
+      "random_state": 42,
+      "scale_pos_weight": 89.38955374899689
+    },
+    "pressor": {
+      "objective": "binary:logistic",
+      "tree_method": "hist",
+      "learning_rate": 0.05,
+      "max_depth": 4,
+      "min_child_weight": 20,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 3.0,
+      "reg_alpha": 0.0,
+      "eval_metric": [
+        "auc",
+        "aucpr"
+      ],
+      "random_state": 42,
+      "scale_pos_weight": 92.65054404800637
+    },
+    "composite": {
+      "objective": "binary:logistic",
+      "tree_method": "hist",
+      "learning_rate": 0.05,
+      "max_depth": 5,
+      "min_child_weight": 10,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 2.0,
+      "reg_alpha": 0.0,
+      "eval_metric": [
+        "auc",
+        "aucpr"
+      ],
+      "random_state": 42,
+      "scale_pos_weight": 21.830182859660717
+    }
+  },
+  "test_results": {
+    "death": {
+      "test_auroc": 0.9206058486714952,
+      "test_auprc": 0.319127555935572,
+      "threshold": 0.1,
+      "precision": 0.030856381694027064,
+      "recall": 0.9726612065982235,
+      "f1": 0.05981520563250395,
+      "confusion_matrix": [
+        [
+          282843,
+          264834
+        ],
+        [
+          237,
+          8432
+        ]
+      ],
+      "pred_pos": 273266,
+      "actual_pos": 8669
+    },
+    "vent": {
+      "test_auroc": 0.7761753461637356,
+      "test_auprc": 0.07693698593663478,
+      "threshold": 0.1,
+      "precision": 0.011753499283611229,
+      "recall": 0.9905456958036158,
+      "f1": 0.02323134286264449,
+      "confusion_matrix": [
+        [
+          48185,
+          502132
+        ],
+        [
+          57,
+          5972
+        ]
+      ],
+      "pred_pos": 508104,
+      "actual_pos": 6029
+    },
+    "pressor": {
+      "test_auroc": 0.804119873685504,
+      "test_auprc": 0.0499600413166874,
+      "threshold": 0.1,
+      "precision": 0.012098872693020676,
+      "recall": 0.9832226494232785,
+      "f1": 0.023903603810300728,
+      "confusion_matrix": [
+        [
+          91248,
+          459376
+        ],
+        [
+          96,
+          5626
+        ]
+      ],
+      "pred_pos": 465002,
+      "actual_pos": 5722
+    },
+    "composite": {
+      "test_auroc": 0.7818107054643019,
+      "test_auprc": 0.22729811557057397,
+      "threshold": 0.15,
+      "precision": 0.04496018700305723,
+      "recall": 0.9876891943167925,
+      "f1": 0.08600535996181945,
+      "confusion_matrix": [
+        [
+          34993,
+          497634
+        ],
+        [
+          292,
+          23427
+        ]
+      ],
+      "pred_pos": 521061,
+      "actual_pos": 23719
+    }
+  }
+}

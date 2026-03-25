@@ -1,0 +1,101 @@
+# 환경 변수
+.env
+.env.*
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Google OAuth 관련 파일 (절대 커밋 금지)
+token.pickle
+credentials.json
+
+# Python 관련
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node.js
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+*:Zone.Identifier
+
+
+# Airflow
+airflow/logs/*
+!airflow/logs/.gitkeep
+
+# data
+data.ipynb 
+mimic_total.*
+data-pipeline/data/duckdb/
+data-pipeline/data/processed/*.csv
+data-pipeline/data/processed/all_features
+data-pipeline/data/processed/all_features_refactored
+data-pipeline/data/processed/all_features_v3
+data-pipeline/data/raw/hosp/
+
+# model
+*.pkl
+# but keep pkl files in ml-service/models
+!/ml-service/models/
+!/ml-service/models/*.pkl
+
+check_dim.py 
+whichgmini.py
+drive_utils.py
+googledrive.ipynb   
+
+
+#vectorDB
+db_medical/
+estimate.py
+guidelines/
+ingest_bge_m3_supabase.py
+
+*.xlsx
+data-pipeline/data/raw/hosp/
+
+#hy data
+mimic/
+v0/
+v0-query/
+frontend-edcc/
+
+# Vector DB & Storage (Large generated files)
+ml-service/db/
+ml-service/db_medical_md/
+ml-service/db_medical_md_backup*/
+ml-service/data/
+
+# Generated Data & Intermediate Files
+*.jsonl
+ml-service/guidelines/*.json
+ml-service/guidelines/*.txt
+ml-service/guidelines/db_medical_md/
+
+# Build Artifacts
+dist/
+build/
+
+# miniprj 제외 디렉토리/파일 (data-pipeline, demo_data, docs, ml-training, old-backup, utils, README.md 제외)
+DEPLOYMENT.md
+airflow/
+backend/
+eicu-preprocessing/
+frontend/
+ml-service/
+protocols/
+requirements.txt
+templates/
