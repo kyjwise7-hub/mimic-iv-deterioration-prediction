@@ -145,8 +145,8 @@ MIMIC-IV 원본 데이터는 PhysioNet DUA 계약에 따라 이 레포에 포함
 ---
 
 ## Team
-
-**김예지** (강원대학교 정보통계학과) — 데이터 전처리, 피처 엔지니어링, 모델링
+**Oracle Academy 2기 - 4조** 불사조
+**김예지** (정보통계학과) — 데이터 전처리, 피처 엔지니어링, 모델링
 
 - GitHub: [kyjwise7-hub](https://github.com/kyjwise7-hub)
 - Portfolio: [kyjwise7.oopy.io](https://kyjwise7.oopy.io)
