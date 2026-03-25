@@ -41,9 +41,6 @@ data.ipynb
 mimic_total.*
 data-pipeline/data/duckdb/
 data-pipeline/data/processed/*.csv
-data-pipeline/data/processed/all_features
-data-pipeline/data/processed/all_features_refactored
-data-pipeline/data/processed/all_features_v3
 data-pipeline/data/raw/hosp/
 
 # model
